@@ -1,0 +1,74 @@
+fieldset{
+	position:relative;
+}
+ul{
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+}
+li{
+	width:150px;
+}
+p{
+	width:50%;
+}
+.listTitle{
+	border-top:0.5px solid grey;
+	width:100%;
+	
+}
+#listFrame{
+	position:relative;
+	left:57%;
+	top:-220px;
+	border:1px solid black;
+	width:150px;
+	height:300px;
+	overflow-x:hidden;
+}
+#participantsList{
+	position:relative;
+	top:-180px;
+	left:50%;
+	width:40%;
+}
+.listTitle>label{
+	display:inline-block;
+	background-color:#6699cc;
+	width:85%;	
+}
+.listTitle>input{
+	background-color:#6699cc;
+	width:15%;
+	padding:0px;
+	margin:0px;
+}
+.collegeList>.listTitle>label{
+	background-color:#99ccff;
+}
+.numbersList>.listTitle>label{
+	background-color:#ccffff;
+}
+#mainTitle{
+	background-color:#6699cc;
+	width:100%;
+}
+#supplierLabel,#collegeLabel{
+	background-color:#6699cc;
+	width:100%;
+}
+.supplierList{
+	display:none;
+}
+.collegeList{
+	display:none;
+}
+.numbersList{
+	display:none;
+}
+.teacherList{
+	display:none;
+}
+.studentList{
+	display:none;
+}

@@ -1,0 +1,211 @@
+/* @group general styles
+---------------------------------------------------------------------------------------------*/
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:微软雅黑，宋体，Serif,Sans-serif,Monospace;
+	font-size:1em;
+	background-image:url("../images/logInBackground.jpg");
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;	
+}
+
+input[type="submit"]{
+	width:90px;
+	height:30px;
+	font-weight:bold;
+	border-radius:0.5em;
+	margin-right:15px;
+	cursor:pointer;
+}
+em{
+	font-size:20px;
+	font-weight:bold;
+}
+/*创建一个动画，从0高度到60%高度*/
+@keyframes show_logIn{
+	from{
+		height:0px;
+	}
+	to{
+		height:60%;
+	}
+}
+@-moz-keyframes show_logIn{
+	from{
+		height:0px;
+	}
+	to{
+		height:60%;
+	}
+}
+@-webkit-keyframes show_logIn{
+	from{
+		height:0px;
+	}
+	to{
+		height:60%;
+	}
+}
+@-o-keyframes show_logIn{
+	from{
+		height:0px;
+	}
+	to{
+		height:60%;
+	}
+}
+/*创建一个动画，从0行高到50px行高*/
+@keyframes showPassage{
+	from{
+		line-height:0px;
+	}
+	to{
+		line-height:50px;
+	}
+}
+@-moz-keyframes showPassage{
+	from{
+		line-height:0px;
+	}
+	to{
+		line-height:50px;
+	}
+}
+@-webkit-keyframes showPassage{
+	from{
+		line-height:0px;
+	}
+	to{
+		line-height:50px;
+	}
+}
+@-o-keyframes showPassage{
+	from{
+		line-height:0px;
+	}
+	to{
+		line-height:50px;
+	}
+}
+/*创建一个动画，从0行高到90px行高*/
+@keyframes showPassage2{
+	from{
+		line-height:0px;
+	}
+	to{
+		line-height:90px;
+	}
+}
+@-moz-keyframes showPassage2{
+	from{
+		line-height:0px;
+	}
+	to{
+		line-height:90px;
+	}
+}
+@-webkit-keyframes showPassage2{
+	from{
+		line-height:0px;
+	}
+	to{
+		line-height:90px;
+	}
+}
+@-o-keyframes showPassage2{
+	from{
+		line-height:0px;
+	}
+	to{
+		line-height:90px;
+	}
+}
+p{
+	line-height:50px;
+	animation:showPassage 1s;
+	-moz-animation:showPassage 1s;
+	-o-animation:showPassage 1s;
+	-webkit-animation:showPassage 1s;
+}
+
+/* @group page structure
+----------------------------------------------------------------------------------------------*/
+.content{
+	width:100%;
+	height:600px;
+	padding-top:8%;
+	background-color:rgba(255,255,255,0.7);
+}
+/*
+.logInArea{
+	width:57%;
+	height:70%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:rgba(102,153,204,0.6);
+	border-radius:1em;
+}
+*/
+.logInArea{
+	width:57%;
+	height:60%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:rgba(0,153,204,0.4);
+	border-radius:1em;
+	animation:show_logIn 1s;
+	-webkit-animation:show_logIn 1s;
+	-moz-animation:show_logIn 1s;
+	-o-animation:show_logIn 1s;
+}
+/* @group page component
+----------------------------------------------------------------------------------------------*/
+h1{
+	height:15%;
+	width:100%;
+	padding-left:5%;
+}
+#inputArea{
+	width:100%;
+	height:85%;
+}
+#left{
+	overflow:auto;
+	float:left;
+	width:40%;
+	height:100%;
+	margin-left:5px;
+}
+#right{
+	overflow:auto;
+	width:59%;
+	height:100%;
+	border-bottom-right-radius:1em;
+	margin-left:41%;
+	background-color:rgba(255,255,255,0.5);
+	text-align:center;
+}
+#right>p{
+	animation:showPassage2 1s;
+	-moz-animation:showPassage2 1s;
+	-o-animation:showPassage2 1s;
+	-webkit-animation:showPassage2 1s;
+	line-height:90px;
+	font-size:20px;
+}
+.inputLabel{
+	font-weight:bold;
+}
+input[type="input"]{
+	height:25px;
+}
+input[type="password"]{
+	height:25px;
+	margin-left:15px;
+}
